@@ -1,0 +1,27 @@
+<h3>Course List</h3>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Photo</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let course of courses">
+        <td>{{course.title}}</td>
+        <td>{{course.price}}</td>
+        <td>
+            <img src="{{course.photo}}" width="50">
+        </td>
+        <td>
+            <!--<a >Add to Cart</a>-->
+            <button class="btn btn-lg btn-primary" type="button" (click)="addCart(course.id); show(course.title); showDialog = !showDialog">Add Cart</button>
+            
+        </td>
+        <app-dialog [(visible)]="showDialog">
+            <h3 class="dialog-head"><i class="fa fa-check-circle" style="font-size:20px;color:rgb(34, 165, 34)"></i>&nbsp;&nbsp;&nbsp;&nbsp;<b>Added</b> &nbsp;{{title}}</h3>
+            <button (click)="showCart()" class="btn dialog-cart">Go to Cart</button>&nbsp;&nbsp;
+            <button (click)="showDialog = !showDialog; load()" class="btn dialog-close">Close</button>          
+        </app-dialog>
+    </tr>
+</table>
+

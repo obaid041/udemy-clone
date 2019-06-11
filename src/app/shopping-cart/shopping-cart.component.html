@@ -1,0 +1,98 @@
+<div class="contanier-fluid">
+  <div class="row">
+    <div id="page-head">
+      <br />
+      <h2>Shopping Cart</h2>
+      <br/><br/>
+    </div>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-8">
+    <br/><br/>
+    <span id="total-courses" data-purpose="cart-list-title">{{noOfitems}} Courses in Cart</span>
+    <ul class="courses-list" >
+      <div class="courses-list-item" *ngFor="let item of items">
+          <li>
+            <div class="item-content">
+              <div class="course-thumbnail">
+                <a href=""><img width="150px" src= "{{item.photo}}"></a>
+              </div>
+              <div class="course-detail">
+                <a href="">
+                  <div class="course-heading">{{item.title}}</div>
+                  <span class="course-author">By {{item.author}}</span>
+                </a>
+                <div>
+                  <a href="">
+                      <div class="course-price">
+                        <div class="price-container" data-purpose="price-text-container">
+                          <div class="course-price-container" data-purpose="course-price-text">
+                            <span>{{item.price}}</span>
+                          </div>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+                <div class="course-options">
+                  <span class="option"><a (click)="remove(item.id); load()">Remove</a></span>
+                  <span class="option"><a>Save for Later</a></span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </div>
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <br /><br/>
+    <div class="checkout-pane">
+      <div class="total-price">
+        <span>${{total}}</span>
+      </div>
+      <br/>
+      <div><button class="btn btn-lg btn-primary" type="button" (click)="navigate()">Checkout</button></div>
+    </div>
+  </div>
+</div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <br/>
+        <span id="total-saved" data-purpose="saved-list-title">Saved For Later</span>
+        <ul class="courses-list">
+            <div class="courses-list-item" *ngFor="let item2 of savedforlater">
+              <li>
+                <div class="item-content">
+                  <div class="course-thumbnail">
+                    <a href=""><img width="150px" src="{{item2.photo}}"></a>
+                  </div>
+                  <div class="course-detail">
+                    <a href="">
+                      <div class="course-heading">{{item2.title}}</div>
+                      <span class="course-author">{{item2.author}}</span>
+                    </a>
+                    <div>
+                      <a href="">
+                          <div class="course-price">
+                            <div class="price-container" data-purpose="price-text-container">
+                              <div class="course-price-container" data-purpose="course-price-text">
+                                <span>{{item2.price}}</span>
+                              </div>
+                            </div>
+                          </div>
+                      </a>
+                    </div>
+                    <div class="course-options">
+                      <span class="option"><a href="">Remove</a></span>
+                      <span class="option"><a href="">Move to Cart </a></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+    </div>
+  </div>
+</div>
