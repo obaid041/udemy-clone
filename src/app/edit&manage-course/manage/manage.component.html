@@ -1,0 +1,84 @@
+  <html lang="en-us">
+  <head>
+  <title>Course Title</title>
+
+  </head>
+
+  <br><br>
+  <body>
+  <section class="card">
+
+  <div style="float:right;">
+    <button type="button" class="close float-right" aria-label="Close">
+        <a routerLink="/instructor"><span aria-hidden="true">&times;</span></a>
+    </button>
+  </div>
+  <br><br>
+  <div class="container">
+  <div class=row>
+    <div class="col-lg-6">
+    <div class="wrapper">
+        <p id="big-p"><strong>Plan your course</strong></p>
+        <ul>
+          <li class="item">
+            <span class="txt"><span class="ic"><i class="fa fa-check"></i></span><a routerLink="/goals">Target your students</a></span>
+          </li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+
+        <ul>
+            <li class="item">
+              <span class="txt"><span class="ic"><i class="fa fa-check"></i></span><a routerLink="/course">Course structure</a></span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <ul>
+        <li class="item">
+          <span class="txt"><span class="ic"><i class="fa fa-check"></i></span><a routerLink="/setup">Setup &amp; test video</a></span>
+        </li>
+        </ul>
+
+    </div>
+
+  </div>
+
+  <div class="col-lg-6">
+    <div class="wrapper">
+        <p id="big-p"><strong>Create your content</strong></p>
+        <ul>
+            <li class="item">
+              <span class="txt"><span class="ic"><i class="fa fa-check"></i></span> <a routerLink="/film">Film &amp; edit</a></span>
+           </li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <ul>
+            <li class="item">
+              <span class="txt"><span class="ic"><i class="fa fa-check"></i></span><a routerLink="/curriculum">Curriculum</a></span>
+           </li>
+        </ul>
+    </div>
+
+
+    <div class="wrapper">
+        <ul>
+            <li class="item">
+              <span class="txt"><span class="ic"><i class="fa fa-check"></i></span><a routerLink="/captions">Captions(optional)</a></span>
+           </li>
+        </ul>
+    </div>
+
+
+  </div>
+</div>
+</div>
+</section>
+
+</body>
+  <router-outlet></router-outlet>
+  </html>

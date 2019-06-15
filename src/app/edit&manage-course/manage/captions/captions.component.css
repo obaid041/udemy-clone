@@ -1,0 +1,49 @@
+section{
+  margin-top: 15px;
+  padding: 20px;
+  box-shadow: whitesmoke;
+}
+
+.close{
+  text-decoration: none;
+}
+
+#alert-heading{
+  margin: 20px;
+  padding: 20px;
+}
+
+.alert {
+  padding: 16px;
+  margin-bottom: 21px;
+  border: 1px solid transparent;
+  text-align: left;
+  position: relative;
+}
+
+.alert-info {
+  background-color: #e6f2f5;
+  border-color: transparent;
+  color: #003440;
+}
+a {
+  color: #007791;
+  background-color: transparent;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+i{
+  color:#007791;
+}
+
+button.toggle-btn{
+    color: #007791;
+    background-color: #fff;
+    border: 1px solid #007791;
+
+}
+
+button.toggle-btn:focus ,
+button.toggle-btn:active
+{outline:0;}
