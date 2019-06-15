@@ -1,0 +1,151 @@
+
+app-manage {
+  order: 0;
+  display: block;
+  background: white;
+}
+
+body{
+  background: #eee;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+@media screen and (max-width: 768px){
+  .wrapper{
+    width: 94%;
+  }
+}
+
+
+
+
+button, input{
+	font-family: inherit;
+	font-size: 100%;
+}
+
+input#font-size,
+input#line-height,
+input#icon-size-ratio,
+input#margin-right{
+	width: 50px;
+	font-size: 1rem;
+	text-align: right;
+}
+
+button{
+  color: #007791;
+  background-color: transparent;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+button:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
+button:active{
+	background-color:transparent;
+}
+
+.item{
+	width: 45%;
+	font-size: 20px;		/* $FONT_SIZE */
+	margin-bottom: 20px;
+
+}
+@media screen and (max-width: 768px){
+  .item{
+    width: 80%;
+  }
+}
+.item.outline{
+	outline: solid 1px #E31BDF;
+}
+.item.bg{
+  background-color: #32333B;
+}
+
+span.txt{
+	line-height: 1.7;		/* $LINE_HEIGHT */
+	font-size: 20px;	/* $FONT_SIZE */
+
+
+	display: inline-block;
+	vertical-align: top;	/* 下側ブロック境界との隙間を消す */
+	text-indent: -50px;		/* -$TEXT_INDENT */
+	margin-left: 50px;		/* $TEXT_INDENT = $ICON_SIZE + $MARGIN_RIGHT */
+}
+span.txt.bg{
+  background-color: lightyellow;
+}
+
+.ic{
+	display: inline-block;
+	width: 20px;	/* $ICON_SIZE (=$FONT_SIZE) */
+	height: 20px;	/* $ICON_SIZE */
+	font-size: 20px;	/* $ICON_SIE */
+
+
+	vertical-align: top;
+	margin-top: calc((1.7 * 20px - 20px)/ 2);		/* ($LINE_HEIGHT x $FONT_SIZE - $ICON_SIZE) / 2 */
+	margin-right: 30px;		/* $MARGIN_RIGHT */
+	position: relative;	/* For adjusting position of FontAwesome icon (pseudo element) */
+}
+.ic.outline{
+  outline: solid 1px blue;
+}
+
+.ic.square{
+	background-color: #FF5252;
+}
+
+.ic.circle{
+	border-radius: 100%;
+	background-color: #FF5252;
+}
+
+.ic i:before{
+	color: #009688;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 50px;	/* $TEXT_INDENT */
+}
+
+section{
+  padding: 20px;
+}
+
+
+a {
+  color: #007791;
+  background-color: transparent;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover{
+  color: #055465;
+  background-color: transparent;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+#big-p{
+  color: #007791;
+  font-size: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  padding: 50px;
+}

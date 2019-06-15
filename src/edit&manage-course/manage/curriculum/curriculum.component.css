@@ -1,0 +1,48 @@
+
+
+.body-curriculum{
+  margin-bottom: 10px;
+  padding: 20px;
+
+}
+
+section{
+  padding: 20px;
+
+}
+
+p,h5{
+  margin-left:  15px;
+}
+
+
+
+#alert-heading{
+
+  margin: 5px;
+  padding: 10px;
+}
+
+.alert {
+  padding: 10px;
+  margin-bottom: 21px;
+  border: 1px solid transparent;
+  text-align: left;
+  position: relative;
+}
+
+.alert-info {
+  background-color: #e6f2f5;
+  border-color: transparent;
+  color: #003440;
+}
+a {
+  color: #007791;
+  background-color: transparent;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+i{
+  color:#007791;
+}

@@ -1,0 +1,44 @@
+body{
+  padding:10px;
+
+}
+
+section{
+  margin-top: 15px;
+  padding: 20px;
+  box-shadow: whitesmoke;
+}
+
+#input-instructor{
+  width: 100%;
+  height: 40px;
+  padding-left: 5px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+#input-instructor:focus{
+  padding-left: 5px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+#add-answer{
+  text-decoration: none;
+  color: #007791;
+  transition: ease-out linear;
+}
+
+
+#add-answer:hover{
+  text-decoration: none;
+  color: hsl(191, 79%, 28%);
+  transition: ease-out linear;
+  font-weight: bold;
+}
+
+a {
+  color: #007791;
+  background-color: transparent;
+  font-weight: 400;
+  text-decoration: none;
+}

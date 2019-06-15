@@ -1,0 +1,45 @@
+<div class="container">
+
+  <section class="card">
+    <div style="float:right;">
+      <button type="button" class="close float-right" aria-label="Close">
+        <a routerLink="/instructor"><span aria-hidden="true">&times;</span></a>
+      </button>
+    </div>
+    <h5>Target your students</h5>
+    <br>
+    <hr>
+    <br>
+    <p>The descriptions you write here will help students decide if your course is the one for them.</p>
+    <br><br>
+    <p>What will students learn in your course?
+    </p>
+
+  <div  *ngFor="let obj of dataArray">
+    <input type="text" placeholder="&nbsp;&nbsp;Example: Low-light Photography" id="input-instructor" name = "aboutCourse"><br><br>
+  </div>
+
+  <a style="cursor: pointer;" (click)="addForm()" id="add-answer"><span><i class="fa fa-plus"></i></span>&nbsp;Add an answer</a>
+
+    <br><br>
+    <p>Are there any course requirements or prerequisites?
+    </p>
+
+    <div  *ngFor="let obj of data_course_prerequisites">
+      <input type="text" placeholder="&nbsp;&nbsp;Example: Be able to read sheet music" id="input-instructor" name = "course_prerequisites"><br><br>
+    </div>
+
+    <a style="cursor: pointer;" (click)="addForm1()" id="add-answer"><span><i class="fa fa-plus"></i></span>&nbsp;Add an answer</a>
+    <br><br>
+    <p>Who are your target students?
+    </p>
+
+    <div  *ngFor="let obj of data_target_students">
+      <input type="text" placeholder="&nbsp;&nbsp;Example: Beginner Python Developers" id="input-instructor" name = "target_students"><br><br>
+    </div>
+
+    <a style="cursor: pointer;" (click)="addForm2()" id="add-answer"><span><i class="fa fa-plus"></i></span>&nbsp;Add an answer</a>
+  </section>
+</div>
+
+<router-outlet></router-outlet>
